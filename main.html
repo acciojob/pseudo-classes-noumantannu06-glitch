@@ -8,6 +8,58 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	    <style>
+        :root {
+    --bg-color: rgb(135, 206, 235);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, sans-serif;
+}
+article p:nth-child(2) {
+    color: inherit; /* Standard text color */
+}
+
+article p:last-child {
+    color: red;
+}
+li {
+    background-color: gray;
+    padding: 10px;
+    width: 50%;
+}
+
+li:nth-child(odd) {
+    background-color: white; /* Odd items have a white background */
+}
+
+li:first-child, li:last-child {
+    font-size: 22px; /* First and last items have a font size of 22px */
+}
+
+li:nth-last-child(2) {
+    background-color: pink; /* Third-to-last item has a pink background */
+}
+    </style>
+</head>
+<body>
+    <article>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+    </article>
+    
+    <ul>
+        <li>First item</li>
+        <li>Second Item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+    </ul>
+</body>
+</html>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
